@@ -12,6 +12,7 @@ import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import java.time.LocalDate;
 
+@SuppressWarnings("ALL")
 @Entity
 @Table(name = "user", uniqueConstraints = {@UniqueConstraint(columnNames = {"email"}), @UniqueConstraint(columnNames = {"username"})})
 @ToString()
